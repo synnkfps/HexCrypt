@@ -10,7 +10,7 @@ string = input(f'Digite um texto para ser encriptado: ')
 # Encrypt 1
 encrypt1 = ''
 for i in string:
-    if i not in alphabet:
+    if i.lower() not in alphabet:
         encrypt1 += i
     else:
         encrypt1 += dictionary[i.lower()]
@@ -18,7 +18,7 @@ for i in string:
 # Encrypt 2
 encrypt2 = ''
 for i in string:
-    if i not in alphabet:
+    if i.lower() not in alphabet:
         encrypt2 += i 
     else:
         encrypt2 += str(dictionary[i.lower()]).replace('0x', '')
